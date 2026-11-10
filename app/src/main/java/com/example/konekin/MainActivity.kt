@@ -39,7 +39,6 @@ class MainActivity : AppCompatActivity() {
                 )
                 binding.lvNama.adapter = listAdapter
 
-                // --- TAMBAHAN KODE UNTUK PERPINDAHAN DETAIL ---
                 binding.lvNama.setOnItemClickListener { _, _, position, _ ->
                     val clickedEmployeeId = dataList[position].id
                     val intent = Intent(this@MainActivity, DetailActivity::class.java)
